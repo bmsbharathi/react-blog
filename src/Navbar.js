@@ -4,9 +4,15 @@ import './css/navbar.css'
 const Navbar = () => {
     return ( 
         <div className="navbar">
-            <Link to="/">Home</Link>
-            <Link to="/create">New Post</Link>
-            <Link to="/about">About</Link>
+            <div className="title">
+                <h1>Blog</h1>
+            </div>
+            <div className="links">
+                <Link to="/">Home</Link>
+                <Link to="/addPost">New Post</Link>
+                <Link to="/about">About</Link>
+            </div>
+            
         </div>
       );
 }

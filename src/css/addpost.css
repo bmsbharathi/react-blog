@@ -1,0 +1,31 @@
+.addPost{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+.addPost label{
+    text-align: left;
+    display: block;
+}
+.addPost textarea{
+    height: 100px;
+}
+.addPost input, textarea {
+
+    width: 100%;
+    margin: 10px 0;
+    padding: 6px 10px;
+    box-sizing: border-box;
+} 
+
+.addPost button{
+    background-color: #f1356d;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    height:30px;
+    width: 100px;
+    font-weight: bold;
+    border-style: none;
+    margin: 10px;
+}

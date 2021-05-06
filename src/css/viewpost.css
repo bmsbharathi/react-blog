@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
+
+.viewPost{
+    font-family: 'quicksand';
+    font-size: 15px;
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.viewPost h2{
+    color: #f1356d;
+}
+.viewPost p{
+    padding: 20px;
+}
