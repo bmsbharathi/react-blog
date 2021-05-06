@@ -1,0 +1,20 @@
+.posts{
+    max-width: 1000px;
+    text-align: center;
+    margin: 0px auto;
+}
+.posts h2{
+    color: #f1356d;
+    margin-top: 20px;
+    text-decoration: underline;
+    text-align: left;
+}
+.post-preview{
+    padding: 10px;
+}
+.post-preview a {
+    text-decoration: none;
+}
+.post-preview:hover{
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+}

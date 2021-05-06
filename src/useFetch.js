@@ -17,6 +17,7 @@ const useFetch = (url) => {
             fetch(url, { signal: abort.signal})
                     .then(
                         res => {
+                            console.log("after REST call")
                             if(!res.ok){
                                 throw Error('Could not fetch data from Server');
                             }else{
@@ -29,12 +30,12 @@ const useFetch = (url) => {
                         setError(null);
                     })
                     .catch(err => {
-                        console.log(err);
+                        console.log("ERROR:::"+err);
                         if(err.name === 'AbortError'){
                             console.log('Aborting data load from Hook')
                             setError(null);
                         }else{
-                            setError(err);
+                            setError(err.message);
                         }
                         setIsPending(false);
                     })
