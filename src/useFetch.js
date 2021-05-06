@@ -14,7 +14,7 @@ const useFetch = (url) => {
         const abort = new AbortController();
         
         setTimeout(()=> {
-            fetch(url, { })
+            fetch(url, { signal: abort.signal})
                     .then(
                         res => {
                             if(!res.ok){

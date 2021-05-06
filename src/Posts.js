@@ -12,7 +12,7 @@ const Posts = ({posts}) => {
                         <Link to={ `/posts/${post.id}` }>
                             <h2>{ post.title } </h2>
                             <p align="left">Written By: { post.author } </p>
-                            <p align="right">Created On: { humanized_time_span(post.createdOn) }</p>
+                            <p align="right">Created: { humanized_time_span(post.createdOn) }</p>
                         </Link>
                     </div>
                     )

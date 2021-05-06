@@ -12,16 +12,19 @@ const AddPost = () => {
 
         const createdOn = new Date();
         const post = { title, author, content, createdOn};
-
+        
         fetch('http://localhost:8000/posts',{
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(post)
         }).then(
-            () => {
-                history.push('/');
+            (res) => {
+                console.log(res.ok);
             }
-        )
+        );
+
+        alert('Post Created Successfully');
+        history.push('/');
 
     };
 

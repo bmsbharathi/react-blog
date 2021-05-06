@@ -1,7 +1,7 @@
 import {useParams} from 'react-router-dom';
 import useFetch from "./useFetch";
-import './css/viewpost.css'
-import humanized_time_span from './humanize_timestamp'
+import './css/viewpost.css';
+
 const ViewPost = () => {
     
     
@@ -10,7 +10,6 @@ const ViewPost = () => {
     const { posts:post, isPending, error } = useFetch("http://localhost:8000/posts/"+postId);
     console.log("Post: "+ JSON.stringify(post));
     if (post) {
-        var timeDifference = humanized_time_span(new Date(),post.createdOn);
         var obj = new Date(post.createdOn);
     }
     
