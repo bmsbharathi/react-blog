@@ -1,16 +1,39 @@
 .posts{
-    max-width: 1000px;
+    max-width: 800px;
     text-align: center;
     margin: 0px auto;
 }
 .posts h2{
-    color: #f1356d;
     margin-top: 20px;
     text-decoration: underline;
     text-align: left;
 }
 .post-preview{
     padding: 10px;
+    max-width: 600px;
+}
+.post-preview h3 {
+    color: #f1356d;
+    text-align: left;
+    padding-bottom: 5px;
+    display: flex;
+    max-width: 400px;
+}
+.post-preview button {
+    color:white;
+    background-color: #f1356d;
+    border: 0px;
+    height: 25px;
+    width: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    display: flex;
+    border-radius: 8px;
+    align-items: right;
+    max-width: 200px;
 }
 .post-preview a {
     text-decoration: none;
