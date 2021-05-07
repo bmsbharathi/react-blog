@@ -11,6 +11,9 @@
     font-size: 20px;
 }
 
+.navbar:hover{
+    box-shadow: 0px 1px 0px 0px #f1356d;
+}
 .navbar h1 {
     color: #f1356d;
 }
