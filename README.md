@@ -1,11 +1,13 @@
 # react-blog
-A simple blog created with react. [Json Server](https://www.npmjs.com/package/json-server) from NPM is used as the backend server.
+A simple blog created with react. [Json Server](https://www.npmjs.com/package/json-server) from npm is used as the backend server. The data for Json Server will be available in `data/posts.json`.
+
 <hr />
 
 ## Running the App
 
 ### Starting the JSON Server
-The data for Json Server will be available in `data/posts.json`. The JSON Server automatically creates CRUD APIs (GET, PUT, POST, DELETE) for the entities available in the JSON file.
+
+The JSON Server automatically creates CRUD APIs (GET, PUT, POST, DELETE) for the entities available in the JSON file.
 
 ```json-server --watch data/posts.json --port 8000```
 
@@ -21,4 +23,4 @@ To override the port set `env:PORT`.
 `PORT=8081 npm run start`
 <hr />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+Created with my learnings from this [Youtube tutorial](https://youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d). This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
