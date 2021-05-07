@@ -52,8 +52,8 @@ const ViewPost = () => {
                 <article>
                     <h2>{ post.title } </h2>
                     <p align="left"><b>Written By:</b> { post.author }</p> 
-                    <p align="right"><b>Created On:</b> { obj.toLocaleDateString() } </p>
-                    { post.content }
+                    <p align="left"><b>Created On:</b> { obj.toLocaleDateString() } </p>
+                    <p>{ post.content }</p>
                     <div>
                         <img onClick={ deletePost } style={ deleteButtonStyle } src={ deleteIcon } alt="delete button" />
                     </div>
