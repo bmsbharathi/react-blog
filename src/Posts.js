@@ -4,11 +4,6 @@ import './css/posts.css';
 
 const Posts = ({posts}) => {
     
-    const deletePost = (evt) => {
-
-        console.log("Delete Post "+ evt.target);
-    };
-
     return ( 
         <div className="posts">
             <h2>All Posts</h2>

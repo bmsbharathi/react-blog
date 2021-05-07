@@ -13,7 +13,13 @@
 }
 .viewPost h2{
     color: #f1356d;
+    margin-bottom: 20px;
 }
 .viewPost p{
-    padding: 20px;
+    padding: 5px;
+}
+
+.viewPost img:hover{
+  
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
 }
