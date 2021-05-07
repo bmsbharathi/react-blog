@@ -16,7 +16,6 @@ const Home = () => {
         { error && <div>{ error }</div> }
         { isPending && <div>Loading...</div> }
         { posts && <Posts posts={posts} /> }
-        
     </div> 
     
     );
