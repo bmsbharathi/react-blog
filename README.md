@@ -5,20 +5,26 @@ A simple blog created with react. [Json Server](https://www.npmjs.com/package/js
 
 ## Running the App
 
+### Install the JSON Server
+
+To install the Json Server from npm
+
+```npm install -g json-server```
+
 ### Starting the JSON Server
 
 The JSON Server automatically creates CRUD APIs (GET, PUT, POST, DELETE) for the entities available in the JSON file.
 
 ```json-server --watch data/posts.json --port 8000```
 
-
+`Note:` If you don't want to load the inital data in the application. you can add/remove it from `posts.json`
 
 ### Starting the React App
 The below command starts the react application in port 3000 by default. 
 
 `npm run start`
 
-To override the port set `env:PORT`.
+To override the port set `env:PORT`
 
 `PORT=8081 npm run start`
 <hr />

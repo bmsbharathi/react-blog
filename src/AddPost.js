@@ -20,12 +20,16 @@ const AddPost = () => {
         }).then(
             (res) => {
                 console.log(res.ok);
+                if(res.ok){
+                    alert('Post Created Successfully');
+                    history.push('/');
+                }
             }
-        );
-
-        alert('Post Created Successfully');
-        history.push('/');
-
+        ).catch(error => {
+            console.log("ERROR: "+ error.name);
+            alert('Error creating Post');
+        } );
+            evt.preventDefault();
     };
 
     return ( 
