@@ -24,7 +24,6 @@ const ViewPost = () => {
 
     } 
 
-
     const deletePost = () => {
 
         fetch('http://localhost:8000/posts/'+postId,{
@@ -53,7 +52,7 @@ const ViewPost = () => {
                     <h2>{ post.title } </h2>
                     <p align="left"><b>Written By:</b> { post.author }</p> 
                     <p align="left"><b>Created On:</b> { obj.toLocaleDateString() } </p>
-                    <p>{ post.content }</p>
+                    <p align="justify" className="content">{ post.content }</p>
                     <div>
                         <img onClick={ deletePost } style={ deleteButtonStyle } src={ deleteIcon } alt="delete button" />
                     </div>

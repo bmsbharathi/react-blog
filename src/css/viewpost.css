@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
 
 .viewPost{
     font-family: 'quicksand';
@@ -13,11 +12,12 @@
 }
 .viewPost h2{
     color: #f1356d;
+    width: 800px;
+    text-align: center;
     margin-bottom: 20px;
 }
 .viewPost p{
-    padding: 5px;
-    margin: 10px;
+    margin: 15px;
 }
 
 .viewPost img:hover{
